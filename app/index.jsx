@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, ActivityIndicator, Button, TouchableOpacity } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-// Supabase setup
+//Supabase setup
 const supabaseUrl = 'https://zllenqslszyocxhprhea.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpsbGVucXNsc3p5b2N4aHByaGVhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NDg4NTEsImV4cCI6MjA2ODUyNDg1MX0.zY-nLw44ZQ5nQlvCRDqpA0-XMCDlgTfTpIQMKb-FMCQ';
+
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function ReportsFeedScreen() {
